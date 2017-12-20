@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <title>Match The Donut</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Match The Donut</h1>
+        <section class="rules-area">
+            <div class="control-buttons">
+                <div class="buttons">
+                    <button>Choose Template</button>
+                    <ul class="templates-list">
+                        <li id="template-1"></li>
+                        <li id="template-2"></li>
+                        <li id="template-3"></li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button>Choose Difficulty</button>
+                    <ul class="difficulty-list">
+                        <li id="difficulty-10">Easy (5x2)</li>
+                        <li id="difficulty-18">Normal (6x3)</li>
+                        <li id="difficulty-24">Hard (8x3)</li>
+                    </ul>
+                </div>
+                <div class="buttons new-game">
+                    <button>New Game</button>
+                </div>
+            </div>
+            <div class="rules">
+                <div class="container">
+                    <h2>Do you like donuts?</h2>                    
+                    <ol>
+                        <p>In this game your task is to find 2 identical donuts</p>
+                        <li>Choose one of the templates</li>
+                        <li>Choose game difficulty</li>
+                        <li>Enjoy the game</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <div id="timer"></div>
+        <section class="game-area"></section>
+        <section class="winner-message">
+            <h2>Congratulations!</h2>
+            <p id="time-score"></p>
+            <h2>Can you do it better?</h2>
+            <div class="buttons winner-buttons">
+                <button>Try Again</button>
+                <button>Main Menu</button>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        let game = new Game();
+        game.gameInit();
+    </script>
+</body>
+</html>

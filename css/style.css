@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'deftone_stylusregular';
+    src: url('../fonts/deftone-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+h1 {
+    font-family: 'deftone_stylusregular', 'Calibri', sans-serif;
+    font-size: 60px;
+    color: rgb(138, 160, 212);
+    text-align: center;
+    padding-top: 10px;
+    user-select: none;
+    cursor: default;
+}
+
+h2 {
+    font-family: 'deftone_stylusregular', 'Calibri', sans-serif;
+    font-size: 45px;
+    padding-top: 10px;
+    text-align: center;
+    user-select: none;
+    cursor: default;
+}
+
+ol {
+    margin-top: 30px;
+    font-family: calibri;
+    font-size: 25px;    
+    list-style: inside;
+}
+
+button {
+    height: 30px;
+    width: 150px;
+    font-family: calibri;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(138, 160, 212);
+    background-color: aliceblue;
+    border: 2px solid;
+    border-radius: 6px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(172, 183, 210, 0.11);
+}
+
+.wrapper {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: aliceblue;
+}
+
+.container {
+    margin: auto;
+    background-color: rgba(246, 249, 248, 0.83);
+    border-radius: 50px;   
+    color: rgb(169, 75, 88);
+    width: 600px;
+    height: 200px;
+}
+
+.control-buttons {
+    display: flex;
+    margin: 30px auto;
+    user-select: none;
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 0 10px;
+}
+
+.buttons ul{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+ul li {
+    width: 150px;
+    height: 35px;
+    padding-top: 10px;
+    background-color: rgba(240, 248, 255, 0.92);
+    text-align: center;
+    font-family: calibri, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(138, 160, 212);
+    border-radius: 5px;
+    border: 3px solid;
+}
+
+.buttons ul li:hover {
+    background-color: rgba(172, 183, 210, 0.9);
+    color: white;
+    border: 3px solid rgba(232, 203, 12, 0.9);
+}
+
+.choosen {
+    border: 3px solid rgb(169, 75, 88);
+    color: rgb(106, 122, 160);
+}
+
+.card-templates-button img {
+    width: 70px;
+    height: 70px;
+}
+
+.wrap {
+    height: 186px;
+    width: 126px;
+    position: relative;
+    perspective: 800px;
+    float: left;
+    margin: 6px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card figure {
+    box-sizing: border-box;
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 3px solid rgb(206, 215, 236);
+    background-color: white;    
+}
+
+.card.flipped {
+    transform: rotateY( 180deg );
+}
+
+.template-1 {  
+    background-image: url(../templates/template-1.png);
+}
+
+.template-2 {    
+    background-image: url(../templates/template-2.png);
+}
+
+.template-3 {    
+    background-image: url(../templates/template-3.png);
+}
+
+figure:first-child {
+    background-size: 60px;
+}
+
+figure:last-child {
+    background-size: 118px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rules {
+    text-align: center;
+    background-image: url(../templates/donuts/donut-5.png);
+    min-height: 600px;
+    margin: 0 8px;
+    display: flex;
+}
+
+.rules-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons ul.visible {
+    display: block;
+}
+
+.templates-list li {
+    padding: 0;
+    width: 68px;
+    height: 68px;
+    background-size: 68px;
+}
+
+#template-1 {
+    background-image: url('../templates/template-1.png');
+}
+
+#template-2 {
+    background-image: url('../templates/template-2.png');
+}
+
+#template-3 {
+    background-image: url('../templates/template-3.png');
+}
+
+.donut-0 {
+    background-image: url('../templates/donuts/donut-1.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-1 {
+    background-image: url('../templates/donuts/donut-2.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-2 {
+    background-image: url('../templates/donuts/donut-3.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-3 {
+    background-image: url('../templates/donuts/donut-4.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-4 {
+    background-image: url('../templates/donuts/donut-5.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-5 {
+    background-image: url('../templates/donuts/donut-6.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-6 {
+    background-image: url('../templates/donuts/donut-7.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-7 {
+    background-image: url('../templates/donuts/donut-8.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-8 {
+    background-image: url('../templates/donuts/donut-9.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-9 {
+    background-image: url('../templates/donuts/donut-10.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-10 {
+    background-image: url('../templates/donuts/donut-11.png');
+    transform: rotateY( 180deg );
+}
+
+.donut-11 {
+    background-image: url('../templates/donuts/donut-12.png');
+    transform: rotateY( 180deg );
+}
+
+.invisible {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.level-10 {
+    width: 700px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+.level-18 {
+    width: 830px;
+    height: 590px;
+    margin: 30px auto;
+}
+
+.level-24 {
+    height: 600px;
+    width: 1110px;
+    margin: 20px auto;
+}
+
+#timer {
+    text-align: center;
+    font-family: 'deftone_stylusregular';
+    font-size: 40px;
+    color: rgb(169, 75, 88);
+}
+
+#timer span {
+    font-size: 28px;
+}
+
+.winner-message {
+    position: absolute;
+    top: -9999px;
+    text-align: center;
+    color: rgb(169, 75, 88);
+}
+
+.winner-message.visible {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+
+#time-score {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.rules-area.invisible {
+    display: none;
+}
